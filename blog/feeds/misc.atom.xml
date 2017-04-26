@@ -145,7 +145,39 @@
 &lt;h2&gt;轉入v-rep&lt;/h2&gt;
 &lt;iframe src="https://player.vimeo.com/video/214725325" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;a href="https://vimeo.com/214725325"&gt;設計二甲_40423105_w2 v rep&lt;/a&gt; from &lt;a href="https://vimeo.com/user61136461"&gt;40423109&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="使用導引"></category><category term="創造力"></category><category term="表達能力"></category><category term="協同設計"></category></entry><entry><title>協同產品設計實習 w4</title><link href="./xie-tong-chan-pin-she-ji-shi-xi-w4.html" rel="alternate"></link><updated>2017-04-10T00:00:00+08:00</updated><author><name>40423109</name></author><id>tag:,2017-04-10:./xie-tong-chan-pin-she-ji-shi-xi-w4.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/214725325"&gt;設計二甲_40423105_w2 v rep&lt;/a&gt; from &lt;a href="https://vimeo.com/user61136461"&gt;40423109&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</summary><category term="使用導引"></category><category term="創造力"></category><category term="表達能力"></category><category term="協同設計"></category></entry><entry><title>協同產品設計實習 期中考報告</title><link href="./xie-tong-chan-pin-she-ji-shi-xi-qi-zhong-kao-bao-gao.html" rel="alternate"></link><updated>2017-04-22T00:00:00+08:00</updated><author><name>40423109</name></author><id>tag:,2017-04-22:./xie-tong-chan-pin-she-ji-shi-xi-qi-zhong-kao-bao-gao.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;h2&gt;Fossil Server 實習查驗&lt;/h2&gt;
+&lt;p&gt;缺&lt;/p&gt;
+&lt;h2&gt;四連桿機構協同 Trace Point 查驗&lt;/h2&gt;
+&lt;p&gt;缺&lt;/p&gt;
+&lt;h2&gt;Fourbar Walker OnShape 零件協同繪圖與組立查驗&lt;/h2&gt;
+&lt;p&gt;利用SolveSpace畫Fourbar Walker製作影片&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/4tcnQNIbOiY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Fourbar Walker零件1&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/jtGI5d98kFU" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Fourbar Walker零件2&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Nhzg3TDj0T8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Fourbar Walker零件3&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ZzEr5wQwMn4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Fourbar Walker零件4&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/1oKrKBjlY4A" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Fourbar Walker零件5&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/NG2Xtqmd9Rw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Fourbar Walker零件組合&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/NDFdlX5mu0U" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Fourbar Walker動作動畫&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/LSW63yNknYE" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;分組協同零件展示&lt;/h2&gt;
+&lt;p&gt;缺&lt;/p&gt;</summary><category term="使用導引"></category><category term="創造力"></category><category term="表達能力"></category><category term="協同設計"></category></entry><entry><title>協同產品設計實習 w4</title><link href="./xie-tong-chan-pin-she-ji-shi-xi-w4.html" rel="alternate"></link><updated>2017-04-10T00:00:00+08:00</updated><author><name>40423109</name></author><id>tag:,2017-04-10:./xie-tong-chan-pin-she-ji-shi-xi-w4.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;p&gt;1.利用網誌與簡報說明安裝或使用 Hyperworks 套件過程與心得 - 課程結束前, 希望能夠使用 Hyperworks 進行連桿機構零件的應力分析與機構運動模擬&lt;/p&gt;
 &lt;p&gt;2.平面四連桿機構的運動路徑方程式推導與網際 2D 繪圖, 方程式推導以 sympy 完成, 而 2D 繪圖則以 Brython 在各組網誌中完成. 先了解如何推導四連桿機構的運動方程式, 然後在各組網誌中完成靜態繪圖與動態模擬.&lt;/p&gt;
@@ -175,64 +207,9 @@
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/XVmK1pEB7pA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;h2&gt;四連桿機構的運動路徑方程式推導PLLP 方程式推導&lt;/h2&gt;
-&lt;p&gt;已知 Point a, Length ac, Length cb 與 Point b, 求 c 點座標&lt;/p&gt;
-&lt;p&gt;PLLP&lt;/p&gt;
-&lt;p&gt;from sympy import symbols, sqrt, solve, cos, sin, Abs&lt;/p&gt;
-&lt;p&gt;inputs&lt;/p&gt;
-&lt;p&gt;ax, ay, bx, by, ac, cb = symbols('ax ay bx by ac cb')&lt;/p&gt;
-&lt;p&gt;intermediate variables&lt;/p&gt;
-&lt;p&gt;ab, dab, bac, degree= symbols('ab dab bac degree')
-ad, bd = symbols('ad bd')&lt;/p&gt;
-&lt;p&gt;outputs&lt;/p&gt;
-&lt;p&gt;cx, cy = symbols('cx cy')&lt;/p&gt;
-&lt;p&gt;從 a, b 點座標求 ab&lt;/p&gt;
-&lt;p&gt;ab = sqrt((ax-bx)2+(ay-by)2)&lt;/p&gt;
-&lt;p&gt;從三角形已知三邊長, 求解 cx, cy&lt;/p&gt;
-&lt;p&gt;data = solve([ac2-((ax-cx)2+(ay-cy)2), cb2-((cx-bx)2+(cy-by)2)], [cx, cy])&lt;/p&gt;
-&lt;p&gt;第1組解&lt;/p&gt;
-&lt;p&gt;print("cx = ", data[0][0])
-print("cy = ", data[0][1])&lt;/p&gt;
-&lt;p&gt;第2組解&lt;/p&gt;
-&lt;p&gt;print("cx = ", data[1][0])
-print("cy = ", data[1][1])&lt;/p&gt;
+&lt;p&gt;缺&lt;/p&gt;
 &lt;h2&gt;數值分析驗證程式碼&lt;/h2&gt;
-&lt;p&gt;from math import pi, cos, sin, sqrt, acos&lt;/p&gt;
-&lt;p&gt;radian = 180/pi
-degree = pi/180&lt;/p&gt;
-&lt;h1&gt;PLAP&lt;/h1&gt;
-&lt;p&gt;def plap(ax, ay, ac, bac, bx, by, pos):
-    if pos == 0:
-        cx= ac&lt;em&gt;cos(bac - acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;/em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;em&gt;abs(ax - bx)))) + ax 
-        cy= ac&lt;/em&gt;sin(bac - acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;/em&gt;abs(ax - bx)))) + ay
-    else:
-        cx= ac&lt;em&gt;cos(bac + acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;/em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;em&gt;abs(ax - bx)))) + ax 
-        cy= ac&lt;/em&gt;sin(bac + acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;/em&gt;abs(ax - bx)))) + ay
-    return cx, cy&lt;/p&gt;
-&lt;h1&gt;PLLP&lt;/h1&gt;
-&lt;p&gt;def pllp(ax, ay, ac, cb, bx, by, pos):
-    if pos == 0:
-        cx =  -((ay - by)&lt;em&gt;(-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;/em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;em&gt;by - 2&lt;/em&gt;ax&lt;em&gt;ay&lt;/em&gt;bx - 2&lt;em&gt;ax&lt;/em&gt;bx&lt;em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;/em&gt;by + ay&lt;em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;/em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 - sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;/em&gt;ax&lt;em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;/em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;em&gt;ax&lt;/em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;em&gt;(ax - bx)) + (ac&lt;strong&gt;2 - ax&lt;/strong&gt;2 - ay&lt;strong&gt;2 + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;/em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))/(2&lt;em&gt;(ax - bx)&lt;/em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
-        cy =  (-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;/em&gt;by - 2&lt;em&gt;ax&lt;/em&gt;ay&lt;em&gt;bx - 2&lt;/em&gt;ax&lt;em&gt;bx&lt;/em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;em&gt;by + ay&lt;/em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;/em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 + sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;/em&gt;ax&lt;em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;/em&gt;(-ax + bx))/(2&lt;em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
-    else:
-        cx =  -((ay - by)&lt;/em&gt;(-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;/em&gt;by - 2&lt;em&gt;ax&lt;/em&gt;ay&lt;em&gt;bx - 2&lt;/em&gt;ax&lt;em&gt;bx&lt;/em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;em&gt;by + ay&lt;/em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;/em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 + sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;/em&gt;ax&lt;em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;/em&gt;(ax - bx)) + (ac&lt;strong&gt;2 - ax&lt;/strong&gt;2 - ay&lt;strong&gt;2 + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))/(2&lt;/em&gt;(ax - bx)&lt;em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
-        cy =  (-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;/em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;em&gt;by - 2&lt;/em&gt;ax&lt;em&gt;ay&lt;/em&gt;bx - 2&lt;em&gt;ax&lt;/em&gt;bx&lt;em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;/em&gt;by + ay&lt;em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;/em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 + sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;/em&gt;ax&lt;em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;/em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;em&gt;ax&lt;/em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;em&gt;(ax - bx))/(2&lt;/em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
-    return cx, cy&lt;/p&gt;
-&lt;p&gt;ax = -60
-ay = 0
-bx = 0
-by = 0
-bac = 50*degree
-ac = 30
-cd = 50
-db = 60
-ce = 50
-ed = 50
-cx, cy = plap(ax, ay, ac, bac, bx, by, 0)
-print("cx=", cx, "cy=", cy)
-dx, dy = pllp(cx, cy, cd, db, bx, by, 0)
-print("dx=", dx, "dy=", dy)
-ex, ey = pllp(cx, cy, ce, ed, dx, dy, 0)
-print("ex=", ex, "ey=", ey)&lt;/p&gt;
+&lt;p&gt;缺&lt;/p&gt;
 &lt;h2&gt;線上 Fossil SCM 倉儲&lt;/h2&gt;
 &lt;p&gt;cdag1&lt;/p&gt;
 &lt;p&gt;線上倉儲可儲存三種不同格式的檔案&lt;/p&gt;
@@ -260,7 +237,14 @@ print("ex=", ex, "ey=", ey)&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/7TrjNVymFB4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;h2&gt;單連桿模擬&lt;/h2&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/u4KgAPxOdlw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="使用導引"></category><category term="創造力"></category><category term="表達能力"></category><category term="協同設計"></category></entry><entry><title>40423109 w15 3D印表機</title><link href="./40423109-w15-3dyin-biao-ji.html" rel="alternate"></link><updated>2016-12-29T00:00:00+08:00</updated><author><name>40423109</name></author><id>tag:,2016-12-29:./40423109-w15-3dyin-biao-ji.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/u4KgAPxOdlw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="使用導引"></category><category term="創造力"></category><category term="表達能力"></category><category term="協同設計"></category></entry><entry><title>協同產品設計實習 w5</title><link href="./xie-tong-chan-pin-she-ji-shi-xi-w5.html" rel="alternate"></link><updated>2017-04-05T00:00:00+08:00</updated><author><name>40423109</name></author><id>tag:,2017-04-05:./xie-tong-chan-pin-she-ji-shi-xi-w5.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;h2&gt;利用v-rep設定單連桿運動&lt;/h2&gt;
+&lt;p&gt;v-rep設定單連桿運動影片&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/GwVXRLYq6L4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;心得&lt;/h2&gt;
+&lt;p&gt;看老師在做此連桿運動時覺得可能稍微有些難度,但後來親自做一次發現沒有想像中的難&lt;/p&gt;</summary><category term="使用導引"></category><category term="創造力"></category><category term="表達能力"></category><category term="協同設計"></category></entry><entry><title>40423109 w15 3D印表機</title><link href="./40423109-w15-3dyin-biao-ji.html" rel="alternate"></link><updated>2016-12-29T00:00:00+08:00</updated><author><name>40423109</name></author><id>tag:,2016-12-29:./40423109-w15-3dyin-biao-ji.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h2&gt;支架&lt;/h2&gt;
 &lt;p&gt;&lt;iframe src="./../data/20161217.html" width="800" height="600"&gt;&lt;/iframe&gt;&lt;/p&gt;
@@ -525,67 +509,30 @@ print("ex=", ex, "ey=", ey)&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/XN6E47BMySI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;h2&gt;利用excel測試路徑是否正確&lt;/h2&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Jcwnwva5syg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="使用導引"></category><category term="創造力"></category><category term="表達能力"></category><category term="協同設計"></category></entry><entry><title>40423109 簡報</title><link href="./40423109-jian-bao.html" rel="alternate"></link><updated>2016-09-02T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-09-02:./40423109-jian-bao.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;</summary><category term="使用導引"></category><category term="創造力"></category><category term="表達能力"></category><category term="協同設計"></category></entry><entry><title>40423109 w18電腦輔助設計實習課程總結</title><link href="./40423109-w18dian-nao-fu-zhu-she-ji-shi-xi-ke-cheng-zong-jie.html" rel="alternate"></link><updated>2016-01-12T00:00:00+08:00</updated><author><name>40423109</name></author><id>tag:,2016-01-12:./40423109-w18dian-nao-fu-zhu-she-ji-shi-xi-ke-cheng-zong-jie.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Jcwnwva5syg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="使用導引"></category><category term="創造力"></category><category term="表達能力"></category><category term="協同設計"></category></entry><entry><title>40423109 簡報</title><link href="./40423109-jian-bao.html" rel="alternate"></link><updated>2016-09-02T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:,2016-09-02:./40423109-jian-bao.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;</summary><category term="使用導引"></category><category term="創造力"></category><category term="表達能力"></category><category term="協同設計"></category></entry><entry><title>協同產品設計實習 w6</title><link href="./xie-tong-chan-pin-she-ji-shi-xi-w6.html" rel="alternate"></link><updated>2016-01-12T00:00:00+08:00</updated><author><name>40423109</name></author><id>tag:,2016-01-12:./xie-tong-chan-pin-she-ji-shi-xi-w6.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
-&lt;h2&gt;個人操作影片&lt;/h2&gt;
-&lt;h2&gt;2. 零件組立&lt;/h2&gt;
-&lt;iframe src="https://player.vimeo.com/video/199020105" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;h2&gt;利用onshape畫出四連桿&lt;/h2&gt;
+&lt;p&gt;四連桿零件繪製&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/0Cghd7tIcDs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;a href="https://vimeo.com/199020105"&gt;組件示範&lt;/a&gt; from &lt;a href="https://vimeo.com/user61136461"&gt;mark ho&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;四連桿零件組合&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/em_YEQ6kpoA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;h2&gt;平面四連桿機構模擬影片&lt;/h2&gt;
-&lt;iframe src="https://player.vimeo.com/video/199017594" width="640" height="363" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;八連桿零件繪製(ㄧ) &lt;/p&gt;
+&lt;iframe width="854" height="480" src="https://www.youtube.com/embed/P19HsnD2uxE" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;a href="https://vimeo.com/199017594"&gt;平面四連桿機構模擬&lt;/a&gt; from &lt;a href="https://vimeo.com/user61136461"&gt;mark ho&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;八連桿零件繪製(二) &lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/iH7W0CtUsI4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;h2&gt;onshape連桿組裝影片&lt;/h2&gt;
-&lt;iframe src="https://player.vimeo.com/video/198168561" width="640" height="414" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;八連桿零件組合&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/CMQyiw25PWM" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;a href="https://vimeo.com/198168561"&gt;40423109  onshape 連桿組裝影片&lt;/a&gt; from &lt;a href="https://vimeo.com/user61136461"&gt;mark ho&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;利用v-rep動作模擬&lt;/h2&gt;
+&lt;p&gt;四連桿動作模擬&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/PiDPrBBs4-A" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;h2&gt;示範零件&lt;/h2&gt;
-&lt;iframe src="https://player.vimeo.com/video/199020522" width="640" height="354" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;八連桿動作模擬 &lt;/p&gt;
+&lt;iframe width="854" height="480" src="https://www.youtube.com/embed/MwfvRnIOL1w" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;&lt;a href="https://vimeo.com/199020522"&gt;onshape 示範畫零件&lt;/a&gt; from &lt;a href="https://vimeo.com/user61136461"&gt;mark ho&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2&gt;3D印表機組裝影片&lt;/h2&gt;
-&lt;p&gt;&lt;iframe src="https://player.vimeo.com/video/198168555" width="640" height="342" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-&lt;p&gt;&lt;a href="https://vimeo.com/198168555"&gt;40423109   3D印表機組裝影片&lt;/a&gt; from &lt;a href="https://vimeo.com/user61136461"&gt;mark ho&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;&lt;/p&gt;
-&lt;h2&gt;印表機&lt;/h2&gt;
-&lt;iframe src="./../data/20161217-2.html" width="800" height="600"&gt;&lt;/iframe&gt;
-
-&lt;h2&gt;組合圖&lt;/h2&gt;
-&lt;iframe src="./../data/1201.html" width="800" height="600"&gt;&lt;/iframe&gt;
-
-&lt;h2&gt;Extrude (平行長出或除料)&lt;/h2&gt;
-&lt;iframe src="./../data/404231091.html" width="800" height="600"&gt;&lt;/iframe&gt;
-
-&lt;h2&gt;Lathe (旋轉繞行長出或除料)&lt;/h2&gt;
-&lt;iframe src="./../data/40423109.html" width="800" height="600"&gt;&lt;/iframe&gt;
-
-&lt;h2&gt;3. Linkages (fourbar &amp;amp; multilink) (四連桿與多連桿運動模擬)&lt;/h2&gt;
-&lt;p&gt;&lt;img src="./../data/404231091126.png"width=800"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="./../data/404231091126-1.png"width=800"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="./../data/404231091126-2.png"width=800"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="./../data/404231091126-3.png"width=800"&gt;&lt;/p&gt;
-&lt;h2&gt;組合圖&lt;/h2&gt;
-&lt;iframe src="./../data/1201.html" width="800" height="600"&gt;&lt;/iframe&gt;
-
-&lt;h2&gt;Solvedspace&lt;/h2&gt;
-&lt;p&gt;&lt;img src="./../data/40423109.png"width=800"&gt;&lt;/p&gt;
-&lt;h2&gt;Excel&lt;/h2&gt;
-&lt;p&gt;&lt;img src="./../data/404231091.png"width=800"&gt;&lt;/p&gt;
-&lt;h2&gt;支架&lt;/h2&gt;
-&lt;iframe src="./../data/20161217.html" width="800" height="600"&gt;&lt;/iframe&gt;
-
-&lt;h2&gt;連桿&lt;/h2&gt;
-&lt;iframe src="./../data/20161217-1.html" width="800" height="600"&gt;&lt;/iframe&gt;
-
-&lt;h2&gt;底盤&lt;/h2&gt;
-&lt;iframe src="./../data/20161217-5.html" width="800" height="600"&gt;&lt;/iframe&gt;
-
-&lt;h2&gt;圓盤&lt;/h2&gt;
-&lt;iframe src="./../data/20161217-3.html" width="800" height="600"&gt;&lt;/iframe&gt;
-
-&lt;h2&gt;印表機&lt;/h2&gt;
-&lt;iframe src="./../data/20161217-2.html" width="800" height="600"&gt;&lt;/iframe&gt;</summary><category term="使用導引"></category><category term="創造力"></category><category term="表達能力"></category><category term="協同設計"></category></entry></feed>
+&lt;h2&gt;心得&lt;/h2&gt;
+&lt;p&gt;在繪製八連桿跟組合此零件時花了不少時間,尤其是使用v-rep來動作模擬時經過蠻多次的失敗才將連桿動作模擬調整最好,個人覺得最困難的部份是八連桿在調整各個桿件中的位置,&lt;/p&gt;</summary><category term="使用導引"></category><category term="創造力"></category><category term="表達能力"></category><category term="協同設計"></category></entry></feed>

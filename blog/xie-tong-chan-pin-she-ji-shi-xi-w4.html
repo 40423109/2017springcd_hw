@@ -355,64 +355,9 @@ init_mathjax();
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XVmK1pEB7pA" frameborder="0" allowfullscreen></iframe>
 
 <h2>四連桿機構的運動路徑方程式推導PLLP 方程式推導</h2>
-<p>已知 Point a, Length ac, Length cb 與 Point b, 求 c 點座標</p>
-<p>PLLP</p>
-<p>from sympy import symbols, sqrt, solve, cos, sin, Abs</p>
-<p>inputs</p>
-<p>ax, ay, bx, by, ac, cb = symbols('ax ay bx by ac cb')</p>
-<p>intermediate variables</p>
-<p>ab, dab, bac, degree= symbols('ab dab bac degree')
-ad, bd = symbols('ad bd')</p>
-<p>outputs</p>
-<p>cx, cy = symbols('cx cy')</p>
-<p>從 a, b 點座標求 ab</p>
-<p>ab = sqrt((ax-bx)2+(ay-by)2)</p>
-<p>從三角形已知三邊長, 求解 cx, cy</p>
-<p>data = solve([ac2-((ax-cx)2+(ay-cy)2), cb2-((cx-bx)2+(cy-by)2)], [cx, cy])</p>
-<p>第1組解</p>
-<p>print("cx = ", data[0][0])
-print("cy = ", data[0][1])</p>
-<p>第2組解</p>
-<p>print("cx = ", data[1][0])
-print("cy = ", data[1][1])</p>
+<p>缺</p>
 <h2>數值分析驗證程式碼</h2>
-<p>from math import pi, cos, sin, sqrt, acos</p>
-<p>radian = 180/pi
-degree = pi/180</p>
-<h1>PLAP</h1>
-<p>def plap(ax, ay, ac, bac, bx, by, pos):
-    if pos == 0:
-        cx= ac<em>cos(bac - acos((ax<strong>2 - 2<em>ax</em>bx + ay</strong>2 - 2</em>ay<em>by + bx<strong>2 + by</strong>2 + abs(ax - bx)<strong>2 - abs(ay - by)</strong>2)/(2</em>sqrt(ax<strong>2 - 2<em>ax</em>bx + ay</strong>2 - 2<em>ay</em>by + bx<strong>2 + by</strong>2)<em>abs(ax - bx)))) + ax 
-        cy= ac</em>sin(bac - acos((ax<strong>2 - 2<em>ax</em>bx + ay</strong>2 - 2<em>ay</em>by + bx<strong>2 + by</strong>2 + abs(ax - bx)<strong>2 - abs(ay - by)</strong>2)/(2<em>sqrt(ax<strong>2 - 2<em>ax</em>bx + ay</strong>2 - 2</em>ay<em>by + bx<strong>2 + by</strong>2)</em>abs(ax - bx)))) + ay
-    else:
-        cx= ac<em>cos(bac + acos((ax<strong>2 - 2<em>ax</em>bx + ay</strong>2 - 2</em>ay<em>by + bx<strong>2 + by</strong>2 + abs(ax - bx)<strong>2 - abs(ay - by)</strong>2)/(2</em>sqrt(ax<strong>2 - 2<em>ax</em>bx + ay</strong>2 - 2<em>ay</em>by + bx<strong>2 + by</strong>2)<em>abs(ax - bx)))) + ax 
-        cy= ac</em>sin(bac + acos((ax<strong>2 - 2<em>ax</em>bx + ay</strong>2 - 2<em>ay</em>by + bx<strong>2 + by</strong>2 + abs(ax - bx)<strong>2 - abs(ay - by)</strong>2)/(2<em>sqrt(ax<strong>2 - 2<em>ax</em>bx + ay</strong>2 - 2</em>ay<em>by + bx<strong>2 + by</strong>2)</em>abs(ax - bx)))) + ay
-    return cx, cy</p>
-<h1>PLLP</h1>
-<p>def pllp(ax, ay, ac, cb, bx, by, pos):
-    if pos == 0:
-        cx =  -((ay - by)<em>(-ac<strong>2*ay + ac</strong>2</em>by + ax<strong>2*ay + ax</strong>2<em>by - 2</em>ax<em>ay</em>bx - 2<em>ax</em>bx<em>by + ay<strong>3 - ay</strong>2</em>by + ay<em>bx<strong>2 - ay*by</strong>2 + ay</em>cb<strong>2 + bx</strong>2<em>by + by<strong>3 - by*cb</strong>2 - sqrt((-ac<strong>2 + 2<em>ac</em>cb + ax</strong>2 - 2</em>ax<em>bx + ay<strong>2 - 2<em>ay</em>by + bx</strong>2 + by<strong>2 - cb</strong>2)</em>(ac<strong>2 + 2<em>ac</em>cb - ax</strong>2 + 2<em>ax</em>bx - ay<strong>2 + 2<em>ay</em>by - bx</strong>2 - by<strong>2 + cb</strong>2))<em>(ax - bx)) + (ac<strong>2 - ax</strong>2 - ay<strong>2 + bx</strong>2 + by<strong>2 - cb</strong>2)</em>(ax<strong>2 - 2<em>ax</em>bx + ay</strong>2 - 2<em>ay</em>by + bx<strong>2 + by</strong>2))/(2<em>(ax - bx)</em>(ax<strong>2 - 2<em>ax</em>bx + ay</strong>2 - 2<em>ay</em>by + bx<strong>2 + by</strong>2))
-        cy =  (-ac<strong>2*ay + ac</strong>2<em>by + ax<strong>2*ay + ax</strong>2</em>by - 2<em>ax</em>ay<em>bx - 2</em>ax<em>bx</em>by + ay<strong>3 - ay</strong>2<em>by + ay</em>bx<strong>2 - ay*by</strong>2 + ay<em>cb<strong>2 + bx</strong>2</em>by + by<strong>3 - by*cb</strong>2 + sqrt((-ac<strong>2 + 2<em>ac</em>cb + ax</strong>2 - 2<em>ax</em>bx + ay<strong>2 - 2<em>ay</em>by + bx</strong>2 + by<strong>2 - cb</strong>2)<em>(ac<strong>2 + 2<em>ac</em>cb - ax</strong>2 + 2</em>ax<em>bx - ay<strong>2 + 2<em>ay</em>by - bx</strong>2 - by<strong>2 + cb</strong>2))</em>(-ax + bx))/(2<em>(ax<strong>2 - 2<em>ax</em>bx + ay</strong>2 - 2</em>ay<em>by + bx<strong>2 + by</strong>2))
-    else:
-        cx =  -((ay - by)</em>(-ac<strong>2*ay + ac</strong>2<em>by + ax<strong>2*ay + ax</strong>2</em>by - 2<em>ax</em>ay<em>bx - 2</em>ax<em>bx</em>by + ay<strong>3 - ay</strong>2<em>by + ay</em>bx<strong>2 - ay*by</strong>2 + ay<em>cb<strong>2 + bx</strong>2</em>by + by<strong>3 - by*cb</strong>2 + sqrt((-ac<strong>2 + 2<em>ac</em>cb + ax</strong>2 - 2<em>ax</em>bx + ay<strong>2 - 2<em>ay</em>by + bx</strong>2 + by<strong>2 - cb</strong>2)<em>(ac<strong>2 + 2<em>ac</em>cb - ax</strong>2 + 2</em>ax<em>bx - ay<strong>2 + 2<em>ay</em>by - bx</strong>2 - by<strong>2 + cb</strong>2))</em>(ax - bx)) + (ac<strong>2 - ax</strong>2 - ay<strong>2 + bx</strong>2 + by<strong>2 - cb</strong>2)<em>(ax<strong>2 - 2<em>ax</em>bx + ay</strong>2 - 2</em>ay<em>by + bx<strong>2 + by</strong>2))/(2</em>(ax - bx)<em>(ax<strong>2 - 2<em>ax</em>bx + ay</strong>2 - 2</em>ay<em>by + bx<strong>2 + by</strong>2))
-        cy =  (-ac<strong>2*ay + ac</strong>2</em>by + ax<strong>2*ay + ax</strong>2<em>by - 2</em>ax<em>ay</em>bx - 2<em>ax</em>bx<em>by + ay<strong>3 - ay</strong>2</em>by + ay<em>bx<strong>2 - ay*by</strong>2 + ay</em>cb<strong>2 + bx</strong>2<em>by + by<strong>3 - by*cb</strong>2 + sqrt((-ac<strong>2 + 2<em>ac</em>cb + ax</strong>2 - 2</em>ax<em>bx + ay<strong>2 - 2<em>ay</em>by + bx</strong>2 + by<strong>2 - cb</strong>2)</em>(ac<strong>2 + 2<em>ac</em>cb - ax</strong>2 + 2<em>ax</em>bx - ay<strong>2 + 2<em>ay</em>by - bx</strong>2 - by<strong>2 + cb</strong>2))<em>(ax - bx))/(2</em>(ax<strong>2 - 2<em>ax</em>bx + ay</strong>2 - 2<em>ay</em>by + bx<strong>2 + by</strong>2))
-    return cx, cy</p>
-<p>ax = -60
-ay = 0
-bx = 0
-by = 0
-bac = 50*degree
-ac = 30
-cd = 50
-db = 60
-ce = 50
-ed = 50
-cx, cy = plap(ax, ay, ac, bac, bx, by, 0)
-print("cx=", cx, "cy=", cy)
-dx, dy = pllp(cx, cy, cd, db, bx, by, 0)
-print("dx=", dx, "dy=", dy)
-ex, ey = pllp(cx, cy, ce, ed, dx, dy, 0)
-print("ex=", ex, "ey=", ey)</p>
+<p>缺</p>
 <h2>線上 Fossil SCM 倉儲</h2>
 <p>cdag1</p>
 <p>線上倉儲可儲存三種不同格式的檔案</p>
@@ -471,13 +416,13 @@ print("ex=", ex, "ey=", ey)</p>
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./xie-tong-chan-pin-she-ji-shi-xi-w4.html">
-                            協同產品設計實習 w4
+                        <a href="./xie-tong-chan-pin-she-ji-shi-xi-qi-zhong-kao-bao-gao.html">
+                            協同產品設計實習 期中考報告
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="./40423109-w15-3dyin-biao-ji.html">
-                            40423109 w15 3D印表機
+                        <a href="./xie-tong-chan-pin-she-ji-shi-xi-w4.html">
+                            協同產品設計實習 w4
                         </a>
                     </li>
                 </ul>
