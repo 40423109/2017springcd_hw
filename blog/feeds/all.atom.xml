@@ -182,7 +182,237 @@
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/aAb5FP7PgEE" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;h2&gt;零件組立&lt;/h2&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/DbMF9CX07QA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="作業"></category></entry><entry><title>40423109 w15 3D印表機</title><link href="./40423109-w15-3dyin-biao-ji.html" rel="alternate"></link><updated>2016-12-29T00:00:00+08:00</updated><author><name>40423109</name></author><id>tag:,2016-12-29:./40423109-w15-3dyin-biao-ji.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/DbMF9CX07QA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="作業"></category></entry><entry><title>協同產品設計實習 w4</title><link href="./xie-tong-chan-pin-she-ji-shi-xi-w4.html" rel="alternate"></link><updated>2017-04-10T00:00:00+08:00</updated><author><name>40423109</name></author><id>tag:,2017-04-10:./xie-tong-chan-pin-she-ji-shi-xi-w4.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;1.利用網誌與簡報說明安裝或使用 Hyperworks 套件過程與心得 - 課程結束前, 希望能夠使用 Hyperworks 進行連桿機構零件的應力分析與機構運動模擬&lt;/p&gt;
+&lt;p&gt;2.平面四連桿機構的運動路徑方程式推導與網際 2D 繪圖, 方程式推導以 sympy 完成, 而 2D 繪圖則以 Brython 在各組網誌中完成. 先了解如何推導四連桿機構的運動方程式, 然後在各組網誌中完成靜態繪圖與動態模擬.&lt;/p&gt;
+&lt;h2&gt;W4作業&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;利用網誌與簡報說明安裝或使用 Hyperworks 套件過程與心得 - 課程結束前, 希望能夠使用 Hyperworks 進行連桿機構零件的應力分析與機構運動模擬.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;平面四連桿機構的運動路徑方程式推導與網際 2D 繪圖, 方程式推導以 sympy 完成, 而 2D 繪圖則以 Brython 在各組網誌中完成. 先了解如何推導四連桿機構的運動方程式, 然後在各組網誌中完成靜態繪圖與動態模擬.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;為各班各組在 https://mde2a2.kmol.info 主機上建立 cdbg1(完成後可直接連結至 cdbg1 倉儲, 交由組長管理) ~ cdbg8, 以及 cdag1 ~ cdag8 等線上 Fossil SCM 倉儲, 用來管理各組協同產品設計實習過程中的純文件檔案&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;HYPERWORKS安裝&lt;/h2&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/CmyA3_l3abQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;SOLIDTHINKING下載安裝&lt;/h2&gt;
+&lt;p&gt;下載教學(一)&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/hE7xkd9A7Q8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;下載教學(二)&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/gbZ-t1BU5Fk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;下載教學(三)&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/XVmK1pEB7pA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;四連桿機構的運動路徑方程式推導PLLP 方程式推導&lt;/h2&gt;
+&lt;p&gt;已知 Point a, Length ac, Length cb 與 Point b, 求 c 點座標&lt;/p&gt;
+&lt;p&gt;PLLP&lt;/p&gt;
+&lt;p&gt;from sympy import symbols, sqrt, solve, cos, sin, Abs&lt;/p&gt;
+&lt;p&gt;inputs&lt;/p&gt;
+&lt;p&gt;ax, ay, bx, by, ac, cb = symbols('ax ay bx by ac cb')&lt;/p&gt;
+&lt;p&gt;intermediate variables&lt;/p&gt;
+&lt;p&gt;ab, dab, bac, degree= symbols('ab dab bac degree')
+ad, bd = symbols('ad bd')&lt;/p&gt;
+&lt;p&gt;outputs&lt;/p&gt;
+&lt;p&gt;cx, cy = symbols('cx cy')&lt;/p&gt;
+&lt;p&gt;從 a, b 點座標求 ab&lt;/p&gt;
+&lt;p&gt;ab = sqrt((ax-bx)2+(ay-by)2)&lt;/p&gt;
+&lt;p&gt;從三角形已知三邊長, 求解 cx, cy&lt;/p&gt;
+&lt;p&gt;data = solve([ac2-((ax-cx)2+(ay-cy)2), cb2-((cx-bx)2+(cy-by)2)], [cx, cy])&lt;/p&gt;
+&lt;p&gt;第1組解&lt;/p&gt;
+&lt;p&gt;print("cx = ", data[0][0])
+print("cy = ", data[0][1])&lt;/p&gt;
+&lt;p&gt;第2組解&lt;/p&gt;
+&lt;p&gt;print("cx = ", data[1][0])
+print("cy = ", data[1][1])&lt;/p&gt;
+&lt;h2&gt;數值分析驗證程式碼&lt;/h2&gt;
+&lt;p&gt;from math import pi, cos, sin, sqrt, acos&lt;/p&gt;
+&lt;p&gt;radian = 180/pi
+degree = pi/180&lt;/p&gt;
+&lt;h1&gt;PLAP&lt;/h1&gt;
+&lt;p&gt;def plap(ax, ay, ac, bac, bx, by, pos):
+    if pos == 0:
+        cx= ac&lt;em&gt;cos(bac - acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;/em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;em&gt;abs(ax - bx)))) + ax 
+        cy= ac&lt;/em&gt;sin(bac - acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;/em&gt;abs(ax - bx)))) + ay
+    else:
+        cx= ac&lt;em&gt;cos(bac + acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;/em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;em&gt;abs(ax - bx)))) + ax 
+        cy= ac&lt;/em&gt;sin(bac + acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;/em&gt;abs(ax - bx)))) + ay
+    return cx, cy&lt;/p&gt;
+&lt;h1&gt;PLLP&lt;/h1&gt;
+&lt;p&gt;def pllp(ax, ay, ac, cb, bx, by, pos):
+    if pos == 0:
+        cx =  -((ay - by)&lt;em&gt;(-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;/em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;em&gt;by - 2&lt;/em&gt;ax&lt;em&gt;ay&lt;/em&gt;bx - 2&lt;em&gt;ax&lt;/em&gt;bx&lt;em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;/em&gt;by + ay&lt;em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;/em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 - sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;/em&gt;ax&lt;em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;/em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;em&gt;ax&lt;/em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;em&gt;(ax - bx)) + (ac&lt;strong&gt;2 - ax&lt;/strong&gt;2 - ay&lt;strong&gt;2 + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;/em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))/(2&lt;em&gt;(ax - bx)&lt;/em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
+        cy =  (-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;/em&gt;by - 2&lt;em&gt;ax&lt;/em&gt;ay&lt;em&gt;bx - 2&lt;/em&gt;ax&lt;em&gt;bx&lt;/em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;em&gt;by + ay&lt;/em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;/em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 + sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;/em&gt;ax&lt;em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;/em&gt;(-ax + bx))/(2&lt;em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
+    else:
+        cx =  -((ay - by)&lt;/em&gt;(-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;/em&gt;by - 2&lt;em&gt;ax&lt;/em&gt;ay&lt;em&gt;bx - 2&lt;/em&gt;ax&lt;em&gt;bx&lt;/em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;em&gt;by + ay&lt;/em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;/em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 + sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;/em&gt;ax&lt;em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;/em&gt;(ax - bx)) + (ac&lt;strong&gt;2 - ax&lt;/strong&gt;2 - ay&lt;strong&gt;2 + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))/(2&lt;/em&gt;(ax - bx)&lt;em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
+        cy =  (-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;/em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;em&gt;by - 2&lt;/em&gt;ax&lt;em&gt;ay&lt;/em&gt;bx - 2&lt;em&gt;ax&lt;/em&gt;bx&lt;em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;/em&gt;by + ay&lt;em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;/em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 + sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;/em&gt;ax&lt;em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;/em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;em&gt;ax&lt;/em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;em&gt;(ax - bx))/(2&lt;/em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
+    return cx, cy&lt;/p&gt;
+&lt;p&gt;ax = -60
+ay = 0
+bx = 0
+by = 0
+bac = 50*degree
+ac = 30
+cd = 50
+db = 60
+ce = 50
+ed = 50
+cx, cy = plap(ax, ay, ac, bac, bx, by, 0)
+print("cx=", cx, "cy=", cy)
+dx, dy = pllp(cx, cy, cd, db, bx, by, 0)
+print("dx=", dx, "dy=", dy)
+ex, ey = pllp(cx, cy, ce, ed, dx, dy, 0)
+print("ex=", ex, "ey=", ey)&lt;/p&gt;
+&lt;h2&gt;線上 Fossil SCM 倉儲&lt;/h2&gt;
+&lt;p&gt;cdag1&lt;/p&gt;
+&lt;p&gt;線上倉儲可儲存三種不同格式的檔案&lt;/p&gt;
+&lt;p&gt;第一種:Fossil Wiki&lt;/p&gt;
+&lt;p&gt;Fossil 是一個分散式版本控制系統、缺陷跟蹤管理系統以及在軟體開發中使用的wiki軟體伺服器，它由D.理察·希普建立&lt;/p&gt;
+&lt;p&gt;第二種:Markdown&lt;/p&gt;
+&lt;p&gt;Markdown的目標是實現「易讀易寫」。&lt;/p&gt;
+&lt;p&gt;不過最需要強調的便是它的可讀性。一份使用Markdown格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。Markdown語法受到一些既有text-to-HTML格式的影響，包括Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，然而最大靈感來源其實是純文字的電子郵件格式。&lt;/p&gt;
+&lt;p&gt;第三種:plain text(純文本)&lt;/p&gt;
+&lt;p&gt;在計算中，純文本是僅表示可讀材料的字符但不表示其圖形表示的數據（例如文件內容），也不表示其他對象（圖像等）&lt;/p&gt;
+&lt;h2&gt;4.單連桿製作及導入v-rep&lt;/h2&gt;
+&lt;p&gt;零件一&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/J9yB2HT_r-k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;零件二&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Iu55ewEfhiI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;零件三&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/oQJJFNw67ZY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;組裝&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/rEKDPnC_kJY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;導入v-rep&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/7TrjNVymFB4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;單連桿模擬&lt;/h2&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/u4KgAPxOdlw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="使用導引"></category><category term="創造力"></category><category term="表達能力"></category><category term="協同設計"></category></entry><entry><title>協同產品設計實習 w4</title><link href="./xie-tong-chan-pin-she-ji-shi-xi-w4.html" rel="alternate"></link><updated>2017-04-10T00:00:00+08:00</updated><author><name>40423109</name></author><id>tag:,2017-04-10:./xie-tong-chan-pin-she-ji-shi-xi-w4.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;1.利用網誌與簡報說明安裝或使用 Hyperworks 套件過程與心得 - 課程結束前, 希望能夠使用 Hyperworks 進行連桿機構零件的應力分析與機構運動模擬&lt;/p&gt;
+&lt;p&gt;2.平面四連桿機構的運動路徑方程式推導與網際 2D 繪圖, 方程式推導以 sympy 完成, 而 2D 繪圖則以 Brython 在各組網誌中完成. 先了解如何推導四連桿機構的運動方程式, 然後在各組網誌中完成靜態繪圖與動態模擬.&lt;/p&gt;
+&lt;h2&gt;W4作業&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;利用網誌與簡報說明安裝或使用 Hyperworks 套件過程與心得 - 課程結束前, 希望能夠使用 Hyperworks 進行連桿機構零件的應力分析與機構運動模擬.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;平面四連桿機構的運動路徑方程式推導與網際 2D 繪圖, 方程式推導以 sympy 完成, 而 2D 繪圖則以 Brython 在各組網誌中完成. 先了解如何推導四連桿機構的運動方程式, 然後在各組網誌中完成靜態繪圖與動態模擬.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;為各班各組在 https://mde2a2.kmol.info 主機上建立 cdbg1(完成後可直接連結至 cdbg1 倉儲, 交由組長管理) ~ cdbg8, 以及 cdag1 ~ cdag8 等線上 Fossil SCM 倉儲, 用來管理各組協同產品設計實習過程中的純文件檔案&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;HYPERWORKS安裝&lt;/h2&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/CmyA3_l3abQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;SOLIDTHINKING下載安裝&lt;/h2&gt;
+&lt;p&gt;下載教學(一)&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/hE7xkd9A7Q8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;下載教學(二)&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/gbZ-t1BU5Fk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;下載教學(三)&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/XVmK1pEB7pA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;四連桿機構的運動路徑方程式推導PLLP 方程式推導&lt;/h2&gt;
+&lt;p&gt;已知 Point a, Length ac, Length cb 與 Point b, 求 c 點座標&lt;/p&gt;
+&lt;p&gt;PLLP&lt;/p&gt;
+&lt;p&gt;from sympy import symbols, sqrt, solve, cos, sin, Abs&lt;/p&gt;
+&lt;p&gt;inputs&lt;/p&gt;
+&lt;p&gt;ax, ay, bx, by, ac, cb = symbols('ax ay bx by ac cb')&lt;/p&gt;
+&lt;p&gt;intermediate variables&lt;/p&gt;
+&lt;p&gt;ab, dab, bac, degree= symbols('ab dab bac degree')
+ad, bd = symbols('ad bd')&lt;/p&gt;
+&lt;p&gt;outputs&lt;/p&gt;
+&lt;p&gt;cx, cy = symbols('cx cy')&lt;/p&gt;
+&lt;p&gt;從 a, b 點座標求 ab&lt;/p&gt;
+&lt;p&gt;ab = sqrt((ax-bx)2+(ay-by)2)&lt;/p&gt;
+&lt;p&gt;從三角形已知三邊長, 求解 cx, cy&lt;/p&gt;
+&lt;p&gt;data = solve([ac2-((ax-cx)2+(ay-cy)2), cb2-((cx-bx)2+(cy-by)2)], [cx, cy])&lt;/p&gt;
+&lt;p&gt;第1組解&lt;/p&gt;
+&lt;p&gt;print("cx = ", data[0][0])
+print("cy = ", data[0][1])&lt;/p&gt;
+&lt;p&gt;第2組解&lt;/p&gt;
+&lt;p&gt;print("cx = ", data[1][0])
+print("cy = ", data[1][1])&lt;/p&gt;
+&lt;h2&gt;數值分析驗證程式碼&lt;/h2&gt;
+&lt;p&gt;from math import pi, cos, sin, sqrt, acos&lt;/p&gt;
+&lt;p&gt;radian = 180/pi
+degree = pi/180&lt;/p&gt;
+&lt;h1&gt;PLAP&lt;/h1&gt;
+&lt;p&gt;def plap(ax, ay, ac, bac, bx, by, pos):
+    if pos == 0:
+        cx= ac&lt;em&gt;cos(bac - acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;/em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;em&gt;abs(ax - bx)))) + ax 
+        cy= ac&lt;/em&gt;sin(bac - acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;/em&gt;abs(ax - bx)))) + ay
+    else:
+        cx= ac&lt;em&gt;cos(bac + acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;/em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;em&gt;abs(ax - bx)))) + ax 
+        cy= ac&lt;/em&gt;sin(bac + acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;/em&gt;abs(ax - bx)))) + ay
+    return cx, cy&lt;/p&gt;
+&lt;h1&gt;PLLP&lt;/h1&gt;
+&lt;p&gt;def pllp(ax, ay, ac, cb, bx, by, pos):
+    if pos == 0:
+        cx =  -((ay - by)&lt;em&gt;(-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;/em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;em&gt;by - 2&lt;/em&gt;ax&lt;em&gt;ay&lt;/em&gt;bx - 2&lt;em&gt;ax&lt;/em&gt;bx&lt;em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;/em&gt;by + ay&lt;em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;/em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 - sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;/em&gt;ax&lt;em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;/em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;em&gt;ax&lt;/em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;em&gt;(ax - bx)) + (ac&lt;strong&gt;2 - ax&lt;/strong&gt;2 - ay&lt;strong&gt;2 + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;/em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))/(2&lt;em&gt;(ax - bx)&lt;/em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
+        cy =  (-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;/em&gt;by - 2&lt;em&gt;ax&lt;/em&gt;ay&lt;em&gt;bx - 2&lt;/em&gt;ax&lt;em&gt;bx&lt;/em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;em&gt;by + ay&lt;/em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;/em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 + sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;/em&gt;ax&lt;em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;/em&gt;(-ax + bx))/(2&lt;em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
+    else:
+        cx =  -((ay - by)&lt;/em&gt;(-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;/em&gt;by - 2&lt;em&gt;ax&lt;/em&gt;ay&lt;em&gt;bx - 2&lt;/em&gt;ax&lt;em&gt;bx&lt;/em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;em&gt;by + ay&lt;/em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;/em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 + sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;/em&gt;ax&lt;em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;/em&gt;(ax - bx)) + (ac&lt;strong&gt;2 - ax&lt;/strong&gt;2 - ay&lt;strong&gt;2 + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))/(2&lt;/em&gt;(ax - bx)&lt;em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
+        cy =  (-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;/em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;em&gt;by - 2&lt;/em&gt;ax&lt;em&gt;ay&lt;/em&gt;bx - 2&lt;em&gt;ax&lt;/em&gt;bx&lt;em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;/em&gt;by + ay&lt;em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;/em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 + sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;/em&gt;ax&lt;em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;/em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;em&gt;ax&lt;/em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;em&gt;(ax - bx))/(2&lt;/em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
+    return cx, cy&lt;/p&gt;
+&lt;p&gt;ax = -60
+ay = 0
+bx = 0
+by = 0
+bac = 50*degree
+ac = 30
+cd = 50
+db = 60
+ce = 50
+ed = 50
+cx, cy = plap(ax, ay, ac, bac, bx, by, 0)
+print("cx=", cx, "cy=", cy)
+dx, dy = pllp(cx, cy, cd, db, bx, by, 0)
+print("dx=", dx, "dy=", dy)
+ex, ey = pllp(cx, cy, ce, ed, dx, dy, 0)
+print("ex=", ex, "ey=", ey)&lt;/p&gt;
+&lt;h2&gt;線上 Fossil SCM 倉儲&lt;/h2&gt;
+&lt;p&gt;cdag1&lt;/p&gt;
+&lt;p&gt;線上倉儲可儲存三種不同格式的檔案&lt;/p&gt;
+&lt;p&gt;第一種:Fossil Wiki&lt;/p&gt;
+&lt;p&gt;Fossil 是一個分散式版本控制系統、缺陷跟蹤管理系統以及在軟體開發中使用的wiki軟體伺服器，它由D.理察·希普建立&lt;/p&gt;
+&lt;p&gt;第二種:Markdown&lt;/p&gt;
+&lt;p&gt;Markdown的目標是實現「易讀易寫」。&lt;/p&gt;
+&lt;p&gt;不過最需要強調的便是它的可讀性。一份使用Markdown格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。Markdown語法受到一些既有text-to-HTML格式的影響，包括Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，然而最大靈感來源其實是純文字的電子郵件格式。&lt;/p&gt;
+&lt;p&gt;第三種:plain text(純文本)&lt;/p&gt;
+&lt;p&gt;在計算中，純文本是僅表示可讀材料的字符但不表示其圖形表示的數據（例如文件內容），也不表示其他對象（圖像等）&lt;/p&gt;
+&lt;h2&gt;4.單連桿製作及導入v-rep&lt;/h2&gt;
+&lt;p&gt;零件一&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/J9yB2HT_r-k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;零件二&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Iu55ewEfhiI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;零件三&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/oQJJFNw67ZY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;組裝&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/rEKDPnC_kJY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;導入v-rep&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/7TrjNVymFB4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;單連桿模擬&lt;/h2&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/u4KgAPxOdlw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="使用導引"></category><category term="創造力"></category><category term="表達能力"></category><category term="協同設計"></category></entry><entry><title>40423109 w15 3D印表機</title><link href="./40423109-w15-3dyin-biao-ji.html" rel="alternate"></link><updated>2016-12-29T00:00:00+08:00</updated><author><name>40423109</name></author><id>tag:,2016-12-29:./40423109-w15-3dyin-biao-ji.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
 
 &lt;h2&gt;支架&lt;/h2&gt;
 &lt;p&gt;&lt;iframe src="./../data/20161217.html" width="800" height="600"&gt;&lt;/iframe&gt;&lt;/p&gt;
@@ -228,7 +458,220 @@
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2&gt;HYPERWORKS安裝&lt;/h2&gt;
-&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/CmyA3_l3abQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="使用導引"></category><category term="創造力"></category><category term="表達能力"></category><category term="協同設計"></category></entry><entry><title>40423109 w12 Solvespace練習</title><link href="./40423109-w12-solvespacelian-xi.html" rel="alternate"></link><updated>2016-11-24T00:00:00+08:00</updated><author><name>40423109</name></author><id>tag:,2016-11-24:./40423109-w12-solvespacelian-xi.html</id><summary type="html">&lt;p&gt;有關 Solvespace 零件, 組件, 機構模擬等功能介紹, 程式編譯與 API 延伸等&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/CmyA3_l3abQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;SOLIDTHINKING下載安裝&lt;/h2&gt;
+&lt;p&gt;下載教學(一)&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/hE7xkd9A7Q8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;下載教學(二)&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/gbZ-t1BU5Fk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;下載教學(三)&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/XVmK1pEB7pA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;四連桿機構的運動路徑方程式推導PLLP 方程式推導&lt;/h2&gt;
+&lt;h1&gt;已知 Point a, Length ac, Length cb 與 Point b, 求 c 點座標&lt;/h1&gt;
+&lt;p&gt;PLLP&lt;/p&gt;
+&lt;p&gt;from sympy import symbols, sqrt, solve, cos, sin, Abs&lt;/p&gt;
+&lt;p&gt;inputs&lt;/p&gt;
+&lt;p&gt;ax, ay, bx, by, ac, cb = symbols('ax ay bx by ac cb')&lt;/p&gt;
+&lt;p&gt;intermediate variables&lt;/p&gt;
+&lt;p&gt;ab, dab, bac, degree= symbols('ab dab bac degree')
+ad, bd = symbols('ad bd')&lt;/p&gt;
+&lt;p&gt;outputs&lt;/p&gt;
+&lt;p&gt;cx, cy = symbols('cx cy')&lt;/p&gt;
+&lt;p&gt;從 a, b 點座標求 ab&lt;/p&gt;
+&lt;p&gt;ab = sqrt((ax-bx)2+(ay-by)2)&lt;/p&gt;
+&lt;p&gt;從三角形已知三邊長, 求解 cx, cy&lt;/p&gt;
+&lt;p&gt;data = solve([ac2-((ax-cx)2+(ay-cy)2), cb2-((cx-bx)2+(cy-by)2)], [cx, cy])&lt;/p&gt;
+&lt;p&gt;第1組解&lt;/p&gt;
+&lt;p&gt;print("cx = ", data[0][0])
+print("cy = ", data[0][1])&lt;/p&gt;
+&lt;p&gt;第2組解&lt;/p&gt;
+&lt;p&gt;print("cx = ", data[1][0])
+print("cy = ", data[1][1])&lt;/p&gt;
+&lt;h1&gt;數值分析驗證程式碼&lt;/h1&gt;
+&lt;p&gt;from math import pi, cos, sin, sqrt, acos&lt;/p&gt;
+&lt;p&gt;radian = 180/pi
+degree = pi/180&lt;/p&gt;
+&lt;h1&gt;PLAP&lt;/h1&gt;
+&lt;p&gt;def plap(ax, ay, ac, bac, bx, by, pos):
+    if pos == 0:
+        cx= ac&lt;em&gt;cos(bac - acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;/em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;em&gt;abs(ax - bx)))) + ax 
+        cy= ac&lt;/em&gt;sin(bac - acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;/em&gt;abs(ax - bx)))) + ay
+    else:
+        cx= ac&lt;em&gt;cos(bac + acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;/em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;em&gt;abs(ax - bx)))) + ax 
+        cy= ac&lt;/em&gt;sin(bac + acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;/em&gt;abs(ax - bx)))) + ay
+    return cx, cy&lt;/p&gt;
+&lt;h1&gt;PLLP&lt;/h1&gt;
+&lt;p&gt;def pllp(ax, ay, ac, cb, bx, by, pos):
+    if pos == 0:
+        cx =  -((ay - by)&lt;em&gt;(-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;/em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;em&gt;by - 2&lt;/em&gt;ax&lt;em&gt;ay&lt;/em&gt;bx - 2&lt;em&gt;ax&lt;/em&gt;bx&lt;em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;/em&gt;by + ay&lt;em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;/em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 - sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;/em&gt;ax&lt;em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;/em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;em&gt;ax&lt;/em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;em&gt;(ax - bx)) + (ac&lt;strong&gt;2 - ax&lt;/strong&gt;2 - ay&lt;strong&gt;2 + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;/em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))/(2&lt;em&gt;(ax - bx)&lt;/em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
+        cy =  (-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;/em&gt;by - 2&lt;em&gt;ax&lt;/em&gt;ay&lt;em&gt;bx - 2&lt;/em&gt;ax&lt;em&gt;bx&lt;/em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;em&gt;by + ay&lt;/em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;/em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 + sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;/em&gt;ax&lt;em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;/em&gt;(-ax + bx))/(2&lt;em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
+    else:
+        cx =  -((ay - by)&lt;/em&gt;(-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;/em&gt;by - 2&lt;em&gt;ax&lt;/em&gt;ay&lt;em&gt;bx - 2&lt;/em&gt;ax&lt;em&gt;bx&lt;/em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;em&gt;by + ay&lt;/em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;/em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 + sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;/em&gt;ax&lt;em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;/em&gt;(ax - bx)) + (ac&lt;strong&gt;2 - ax&lt;/strong&gt;2 - ay&lt;strong&gt;2 + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))/(2&lt;/em&gt;(ax - bx)&lt;em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
+        cy =  (-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;/em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;em&gt;by - 2&lt;/em&gt;ax&lt;em&gt;ay&lt;/em&gt;bx - 2&lt;em&gt;ax&lt;/em&gt;bx&lt;em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;/em&gt;by + ay&lt;em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;/em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 + sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;/em&gt;ax&lt;em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;/em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;em&gt;ax&lt;/em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;em&gt;(ax - bx))/(2&lt;/em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
+    return cx, cy&lt;/p&gt;
+&lt;p&gt;ax = -60
+ay = 0
+bx = 0
+by = 0
+bac = 50*degree
+ac = 30
+cd = 50
+db = 60
+ce = 50
+ed = 50
+cx, cy = plap(ax, ay, ac, bac, bx, by, 0)
+print("cx=", cx, "cy=", cy)
+dx, dy = pllp(cx, cy, cd, db, bx, by, 0)
+print("dx=", dx, "dy=", dy)
+ex, ey = pllp(cx, cy, ce, ed, dx, dy, 0)
+print("ex=", ex, "ey=", ey)&lt;/p&gt;
+&lt;h2&gt;線上 Fossil SCM 倉儲&lt;/h2&gt;
+&lt;p&gt;cdag1&lt;/p&gt;
+&lt;p&gt;線上倉儲可儲存三種不同格式的檔案&lt;/p&gt;
+&lt;p&gt;第一種:Fossil Wiki&lt;/p&gt;
+&lt;p&gt;Fossil 是一個分散式版本控制系統、缺陷跟蹤管理系統以及在軟體開發中使用的wiki軟體伺服器，它由D.理察·希普建立&lt;/p&gt;
+&lt;p&gt;第二種:Markdown&lt;/p&gt;
+&lt;p&gt;Markdown的目標是實現「易讀易寫」。&lt;/p&gt;
+&lt;p&gt;不過最需要強調的便是它的可讀性。一份使用Markdown格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。Markdown語法受到一些既有text-to-HTML格式的影響，包括Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，然而最大靈感來源其實是純文字的電子郵件格式。&lt;/p&gt;
+&lt;p&gt;第三種:plain text(純文本)&lt;/p&gt;
+&lt;p&gt;在計算中，純文本是僅表示可讀材料的字符但不表示其圖形表示的數據（例如文件內容），也不表示其他對象（圖像等）&lt;/p&gt;
+&lt;h2&gt;4.單連桿製作及導入v-rep&lt;/h2&gt;
+&lt;p&gt;零件一&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/J9yB2HT_r-k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;零件二&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Iu55ewEfhiI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;零件三&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/oQJJFNw67ZY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;組裝&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/rEKDPnC_kJY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;導入v-rep&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/7TrjNVymFB4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1&gt;單連桿模擬&lt;/h1&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/u4KgAPxOdlw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="使用導引"></category><category term="創造力"></category><category term="表達能力"></category><category term="協同設計"></category></entry><entry><title>協同產品設計實習 w4</title><link href="./xie-tong-chan-pin-she-ji-shi-xi-w4.html" rel="alternate"></link><updated>2016-12-02T00:00:00+08:00</updated><author><name>40423109</name></author><id>tag:,2016-12-02:./xie-tong-chan-pin-she-ji-shi-xi-w4.html</id><summary type="html">&lt;!-- PELICAN_END_SUMMARY --&gt;
+
+&lt;p&gt;1.利用網誌與簡報說明安裝或使用 Hyperworks 套件過程與心得 - 課程結束前, 希望能夠使用 Hyperworks 進行連桿機構零件的應力分析與機構運動模擬&lt;/p&gt;
+&lt;p&gt;2.平面四連桿機構的運動路徑方程式推導與網際 2D 繪圖, 方程式推導以 sympy 完成, 而 2D 繪圖則以 Brython 在各組網誌中完成. 先了解如何推導四連桿機構的運動方程式, 然後在各組網誌中完成靜態繪圖與動態模擬.&lt;/p&gt;
+&lt;h2&gt;W4作業&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;利用網誌與簡報說明安裝或使用 Hyperworks 套件過程與心得 - 課程結束前, 希望能夠使用 Hyperworks 進行連桿機構零件的應力分析與機構運動模擬.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;平面四連桿機構的運動路徑方程式推導與網際 2D 繪圖, 方程式推導以 sympy 完成, 而 2D 繪圖則以 Brython 在各組網誌中完成. 先了解如何推導四連桿機構的運動方程式, 然後在各組網誌中完成靜態繪圖與動態模擬.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;為各班各組在 https://mde2a2.kmol.info 主機上建立 cdbg1(完成後可直接連結至 cdbg1 倉儲, 交由組長管理) ~ cdbg8, 以及 cdag1 ~ cdag8 等線上 Fossil SCM 倉儲, 用來管理各組協同產品設計實習過程中的純文件檔案&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;HYPERWORKS安裝&lt;/h2&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/CmyA3_l3abQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;SOLIDTHINKING下載安裝&lt;/h2&gt;
+&lt;p&gt;下載教學(一)&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/hE7xkd9A7Q8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;下載教學(二)&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/gbZ-t1BU5Fk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;下載教學(三)&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/XVmK1pEB7pA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2&gt;四連桿機構的運動路徑方程式推導PLLP 方程式推導&lt;/h2&gt;
+&lt;h1&gt;已知 Point a, Length ac, Length cb 與 Point b, 求 c 點座標&lt;/h1&gt;
+&lt;p&gt;PLLP&lt;/p&gt;
+&lt;p&gt;from sympy import symbols, sqrt, solve, cos, sin, Abs&lt;/p&gt;
+&lt;p&gt;inputs&lt;/p&gt;
+&lt;p&gt;ax, ay, bx, by, ac, cb = symbols('ax ay bx by ac cb')&lt;/p&gt;
+&lt;p&gt;intermediate variables&lt;/p&gt;
+&lt;p&gt;ab, dab, bac, degree= symbols('ab dab bac degree')
+ad, bd = symbols('ad bd')&lt;/p&gt;
+&lt;p&gt;outputs&lt;/p&gt;
+&lt;p&gt;cx, cy = symbols('cx cy')&lt;/p&gt;
+&lt;p&gt;從 a, b 點座標求 ab&lt;/p&gt;
+&lt;p&gt;ab = sqrt((ax-bx)2+(ay-by)2)&lt;/p&gt;
+&lt;p&gt;從三角形已知三邊長, 求解 cx, cy&lt;/p&gt;
+&lt;p&gt;data = solve([ac2-((ax-cx)2+(ay-cy)2), cb2-((cx-bx)2+(cy-by)2)], [cx, cy])&lt;/p&gt;
+&lt;p&gt;第1組解&lt;/p&gt;
+&lt;p&gt;print("cx = ", data[0][0])
+print("cy = ", data[0][1])&lt;/p&gt;
+&lt;p&gt;第2組解&lt;/p&gt;
+&lt;p&gt;print("cx = ", data[1][0])
+print("cy = ", data[1][1])&lt;/p&gt;
+&lt;h1&gt;數值分析驗證程式碼&lt;/h1&gt;
+&lt;p&gt;from math import pi, cos, sin, sqrt, acos&lt;/p&gt;
+&lt;p&gt;radian = 180/pi
+degree = pi/180&lt;/p&gt;
+&lt;h1&gt;PLAP&lt;/h1&gt;
+&lt;p&gt;def plap(ax, ay, ac, bac, bx, by, pos):
+    if pos == 0:
+        cx= ac&lt;em&gt;cos(bac - acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;/em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;em&gt;abs(ax - bx)))) + ax 
+        cy= ac&lt;/em&gt;sin(bac - acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;/em&gt;abs(ax - bx)))) + ay
+    else:
+        cx= ac&lt;em&gt;cos(bac + acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;/em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;em&gt;abs(ax - bx)))) + ax 
+        cy= ac&lt;/em&gt;sin(bac + acos((ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2 + abs(ax - bx)&lt;strong&gt;2 - abs(ay - by)&lt;/strong&gt;2)/(2&lt;em&gt;sqrt(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2)&lt;/em&gt;abs(ax - bx)))) + ay
+    return cx, cy&lt;/p&gt;
+&lt;h1&gt;PLLP&lt;/h1&gt;
+&lt;p&gt;def pllp(ax, ay, ac, cb, bx, by, pos):
+    if pos == 0:
+        cx =  -((ay - by)&lt;em&gt;(-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;/em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;em&gt;by - 2&lt;/em&gt;ax&lt;em&gt;ay&lt;/em&gt;bx - 2&lt;em&gt;ax&lt;/em&gt;bx&lt;em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;/em&gt;by + ay&lt;em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;/em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 - sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;/em&gt;ax&lt;em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;/em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;em&gt;ax&lt;/em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;em&gt;(ax - bx)) + (ac&lt;strong&gt;2 - ax&lt;/strong&gt;2 - ay&lt;strong&gt;2 + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;/em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))/(2&lt;em&gt;(ax - bx)&lt;/em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
+        cy =  (-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;/em&gt;by - 2&lt;em&gt;ax&lt;/em&gt;ay&lt;em&gt;bx - 2&lt;/em&gt;ax&lt;em&gt;bx&lt;/em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;em&gt;by + ay&lt;/em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;/em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 + sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;/em&gt;ax&lt;em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;/em&gt;(-ax + bx))/(2&lt;em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
+    else:
+        cx =  -((ay - by)&lt;/em&gt;(-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;/em&gt;by - 2&lt;em&gt;ax&lt;/em&gt;ay&lt;em&gt;bx - 2&lt;/em&gt;ax&lt;em&gt;bx&lt;/em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;em&gt;by + ay&lt;/em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;/em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 + sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;/em&gt;ax&lt;em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;/em&gt;(ax - bx)) + (ac&lt;strong&gt;2 - ax&lt;/strong&gt;2 - ay&lt;strong&gt;2 + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))/(2&lt;/em&gt;(ax - bx)&lt;em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;/em&gt;ay&lt;em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
+        cy =  (-ac&lt;strong&gt;2*ay + ac&lt;/strong&gt;2&lt;/em&gt;by + ax&lt;strong&gt;2*ay + ax&lt;/strong&gt;2&lt;em&gt;by - 2&lt;/em&gt;ax&lt;em&gt;ay&lt;/em&gt;bx - 2&lt;em&gt;ax&lt;/em&gt;bx&lt;em&gt;by + ay&lt;strong&gt;3 - ay&lt;/strong&gt;2&lt;/em&gt;by + ay&lt;em&gt;bx&lt;strong&gt;2 - ay*by&lt;/strong&gt;2 + ay&lt;/em&gt;cb&lt;strong&gt;2 + bx&lt;/strong&gt;2&lt;em&gt;by + by&lt;strong&gt;3 - by*cb&lt;/strong&gt;2 + sqrt((-ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb + ax&lt;/strong&gt;2 - 2&lt;/em&gt;ax&lt;em&gt;bx + ay&lt;strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;/strong&gt;2 + by&lt;strong&gt;2 - cb&lt;/strong&gt;2)&lt;/em&gt;(ac&lt;strong&gt;2 + 2&lt;em&gt;ac&lt;/em&gt;cb - ax&lt;/strong&gt;2 + 2&lt;em&gt;ax&lt;/em&gt;bx - ay&lt;strong&gt;2 + 2&lt;em&gt;ay&lt;/em&gt;by - bx&lt;/strong&gt;2 - by&lt;strong&gt;2 + cb&lt;/strong&gt;2))&lt;em&gt;(ax - bx))/(2&lt;/em&gt;(ax&lt;strong&gt;2 - 2&lt;em&gt;ax&lt;/em&gt;bx + ay&lt;/strong&gt;2 - 2&lt;em&gt;ay&lt;/em&gt;by + bx&lt;strong&gt;2 + by&lt;/strong&gt;2))
+    return cx, cy&lt;/p&gt;
+&lt;p&gt;ax = -60
+ay = 0
+bx = 0
+by = 0
+bac = 50*degree
+ac = 30
+cd = 50
+db = 60
+ce = 50
+ed = 50
+cx, cy = plap(ax, ay, ac, bac, bx, by, 0)
+print("cx=", cx, "cy=", cy)
+dx, dy = pllp(cx, cy, cd, db, bx, by, 0)
+print("dx=", dx, "dy=", dy)
+ex, ey = pllp(cx, cy, ce, ed, dx, dy, 0)
+print("ex=", ex, "ey=", ey)&lt;/p&gt;
+&lt;h2&gt;線上 Fossil SCM 倉儲&lt;/h2&gt;
+&lt;p&gt;cdag1&lt;/p&gt;
+&lt;p&gt;線上倉儲可儲存三種不同格式的檔案&lt;/p&gt;
+&lt;p&gt;第一種:Fossil Wiki&lt;/p&gt;
+&lt;p&gt;Fossil 是一個分散式版本控制系統、缺陷跟蹤管理系統以及在軟體開發中使用的wiki軟體伺服器，它由D.理察·希普建立&lt;/p&gt;
+&lt;p&gt;第二種:Markdown&lt;/p&gt;
+&lt;p&gt;Markdown的目標是實現「易讀易寫」。&lt;/p&gt;
+&lt;p&gt;不過最需要強調的便是它的可讀性。一份使用Markdown格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。Markdown語法受到一些既有text-to-HTML格式的影響，包括Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，然而最大靈感來源其實是純文字的電子郵件格式。&lt;/p&gt;
+&lt;p&gt;第三種:plain text(純文本)&lt;/p&gt;
+&lt;p&gt;在計算中，純文本是僅表示可讀材料的字符但不表示其圖形表示的數據（例如文件內容），也不表示其他對象（圖像等）&lt;/p&gt;
+&lt;h2&gt;4.單連桿製作及導入v-rep&lt;/h2&gt;
+&lt;p&gt;零件一&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/J9yB2HT_r-k" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;零件二&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Iu55ewEfhiI" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;零件三&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/oQJJFNw67ZY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;組裝&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/rEKDPnC_kJY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;導入v-rep&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/7TrjNVymFB4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1&gt;單連桿模擬&lt;/h1&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/u4KgAPxOdlw" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</summary><category term="使用導引"></category><category term="創造力"></category><category term="表達能力"></category><category term="協同設計"></category></entry><entry><title>40423109 w12 Solvespace練習</title><link href="./40423109-w12-solvespacelian-xi.html" rel="alternate"></link><updated>2016-11-24T00:00:00+08:00</updated><author><name>40423109</name></author><id>tag:,2016-11-24:./40423109-w12-solvespacelian-xi.html</id><summary type="html">&lt;p&gt;有關 Solvespace 零件, 組件, 機構模擬等功能介紹, 程式編譯與 API 延伸等&lt;/p&gt;
 
 
 &lt;h2&gt;Solvespace&lt;/h2&gt;
